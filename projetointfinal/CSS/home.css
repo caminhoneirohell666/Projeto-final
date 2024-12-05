@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Nunito:wght@400;600;800&display=swap');
+
+/* Variáveis para as fontes */
+:root {    
+    --roboto: 'Roboto', sans-serif;
+    --nunito: 'Nunito', sans-serif;
+    --green-primary: #2c6b2f; /* Verde relacionado à agricultura */
+    --green-accent: #3a9a39;  /* Verde mais forte para destaque */
+    --brown-earth: #9e7b4f;   /* Marrom para representar terra */
+    --yellow-soil: #ff9800;   /* Amarelo para representar a colheita */
+    --gray-light: #d1d1d1;    /* Cinza suave */
+}
+
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilo do body */
+body {
+    font-size: 100%;
+    background: #2e2e2e;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: var(--green-primary);
+}
+
+.logo img {
+    max-width: 20%;
+    height: auto;
+}
+
+.cabecalho-menu {
+    font-family: var(--roboto);
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    color: var(--yellow-soil);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cabecalho-menu-item:hover {
+    padding: 0;
+    color: var(--green-accent);
+    background: var(--yellow-soil);
+    border: none;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 18.5px;
+    cursor: pointer;
+}
+
+/* Conteúdo */
+.conteudo {
+    border-top: 0.4px solid var(--brown-earth);
+    margin-bottom: 48px;
+    background-color: #1b1a1aba; /* Fundo claro para o conteúdo */
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-titulo {
+    font-family: var(--nunito);
+    font-size: 64px;
+    font-weight: 400;
+    color: var(--green-primary);
+}
+
+.conteudo-principal-paragrafo {
+    font-family: var(--roboto);
+    font-size: 24px;
+    color: var(--gray-light);
+}
+
+.conteudo-principal-botao {
+    font-family: var(--roboto);
+    color: var(--gray-light);
+    background: var(--green-accent);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo-principal-botao:hover {
+    background-color: #102e2e;
+}
+
+.conteudo-principal-imagem {
+    height: 430px;
+    width: auto;
+    border-radius: 5px;
+    border: 3px solid var(--green-primary);
+}
+
+/* Conteúdo secundário */
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    font-weight: 500;
+    border-top: 0.4px solid var(--brown-earth);
+    font-family: var(--nunito);
+    color: var(--green-primary);
+    font-size: 30px;
+    padding-top: 48px;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: var(--roboto);
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--gray-light);
+}
+
+/* Conteúdo terciário */
+.conteudo-terciario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-terciario-titulo {
+    font-weight: 500;
+    border-top: 0.4px solid var(--brown-earth);
+    font-family: var(--nunito);
+    color: var(--green-primary);
+    font-size: 30px;
+    padding-top: 48px;
+    margin-bottom: 16px;
+}
+
+.conteudo-terciario-botao {
+    display: flex;
+    background: var(--green-accent);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--roboto);
+    text-decoration: none;
+    color: var(--gray-light);
+    justify-content: center;
+    font-size: 18px;
+}
+
+.conteudo-terciario-botao:hover {
+    background-color: var(--yellow-soil);
+}
+
+/* Rodapé */
+footer {
+    border-top: 0.6px solid var(--brown-earth);
+    height: 48px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green-primary);
+}
+
+.rodape {
+    font-size: 20px;
+    font-family: var(--roboto);
+    color: var(--yellow-soil);
+}

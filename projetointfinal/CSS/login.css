@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Nunito:wght@400;600;800&display=swap');
+
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --nunito: 'Nunito', sans-serif;
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff9800;
+    color: #fff;
+    font-family: var(--roboto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #2e2e2e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: var(--nunito);
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.mensagem{
+    background-color: #ff9800;
+    color: #fff;
+    border-radius: 1.5px;
+   padding: 5px;
+}
+
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.signup-link a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 0.6px solid rgb(251, 251, 251);
+    height: 39px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.838);
+}
+
+.rodape {
+    font-size: 15px;
+    font-family: var(--roboto);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Nunito:wght@400;600;800&display=swap');
+
+
+:root {
+    --roboto: 'Roboto', sans-serif;
+}
+
+* {
+    font-family: var(--roboto);
+}
+
+/* Estilos globais */
+
+/* Estilos globais */
+
+body {
+    font-family: var(--roboto);
+    background-color: #ff9800;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Cabeçalho */
+
+
+.logo img{
+    max-width: 20%;
+    height: auto;
+    /* margin-left: -400px; */
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.opcoes {
+    color: #4e4e4e;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: space-around;
+    margin-left: -170px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.opcoes:hover {
+    color: #388e3c;
+    text-decoration: none;
+}
+
+form {
+    background-color: #2e2e2e;
+    padding: 20px 50px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px #0e041a;
+    width: 100%;
+    max-width: 380px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #0e041a;
+   
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+select {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: rgb(146, 143, 143);
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 78%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4caf50;
+}
+
+.facalogin {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.facalogin:hover {
+    text-decoration: none;
+    color: #046cda;
+    font-weight: 500;
+} 
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mensagemsucesso {
+    color: #4caf50; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.mensagem {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #4caf50;
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.mensagem.erro {
+    color: #d32f2f;
+    background-color: #fce4ec;
+}
+
+/* Rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 0.6px solid rgb(251, 251, 251);
+    height: 39px;
+    padding: 3px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #4caf50; 
+}
+
+.rodape {
+    font-family: var(--roboto);
+    color: rgb(255, 255, 255);
+}

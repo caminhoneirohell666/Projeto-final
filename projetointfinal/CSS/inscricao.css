@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Nunito:wght@400;600;800&display=swap');
+
+:root {
+    --font-primary: 'Roboto', sans-serif;
+    --font-heading: 'Nunito', sans-serif;
+    --color-primary: #4caf50; 
+    --color-primary-hover: #388e3c;
+    --color-bg: #f0f0f0; 
+    --color-bg-dark: #2e2e2e; 
+    --color-text: #fefefe; 
+    --color-accent: #ff9800; 
+    --color-border: #bbb;
+    --color-error: #d32f2f;
+}
+
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+body {
+    background-color: #ff9800;
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .tagline {
+    font-size: 16px;
+    color: var(--color-accent);
+    margin-top: 10px;
+}
+
+form {
+    background-color: #2e2e2e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    border: 1px solid var(--color-border);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-text);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--color-primary-hover);
+    transform: scale(1.05);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mensagem {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.mensagem.sucesso {
+    background-color: #e8f5e9;
+    color: var(--color-primary);
+}
+
+.mensagem.erro {
+    background-color: #fce4ec;
+    color: var(--color-error);
+}

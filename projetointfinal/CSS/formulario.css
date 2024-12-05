@@ -1,0 +1,142 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1E1E2F;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Ajuste para caber mais espaço */
+    background-color: #2E2E3F;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px 30px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #4DB8FF;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #B0C4DE;
+    font-style: italic;
+}
+
+/* Flex para Formulário e Desenho */
+.form-and-drawing {
+    display: flex;
+    flex-wrap: wrap; /* Permite que se ajustem em telas menores */
+    justify-content: space-between;
+    gap: 30px; /* Espaço entre o formulário e o desenho */
+}
+
+/* Estilização do formulário */
+form .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Formulário */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4DB8FF;
+    border-radius: 8px;
+    background-color: #262636;
+    color: #F5F5F5;
+    font-size: 1rem;
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form textarea::placeholder {
+    color: #B0C4DE;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Botão */
+form .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4DB8FF;
+    color: #1E1E2F;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+    background-color: #3A9FD1;
+}
+
+/* Desenho */
+.desenho {
+    width: 100%;
+    flex-basis: 40%; /* Ocupa 40% da largura, mas pode ser ajustado */
+    background-color: #262636;
+    border-radius: 12px;
+    padding: 20px;
+    color: #B0C4DE;
+    text-align: center;
+    font-family: monospace;
+    overflow-x: auto; /* Evita que o desenho ultrapasse o contêiner */
+}
+
+@media (max-width: 768px) {
+    .form-and-drawing {
+        flex-direction: column; /* Quando a tela for pequena, empilha o formulário e o desenho */
+        align-items: center;
+    }
+
+    .desenho {
+        width: 100%; /* Ocupa 100% da largura quando em tela pequena */
+        margin-top: 20px;
+    }
+}
